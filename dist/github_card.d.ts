@@ -1,2 +1,12 @@
 /// <reference types="react" />
-export declare function GithubCard(): JSX.Element;
+declare type mode = "user" | "repo";
+interface Props {
+    type: mode;
+    name: string;
+    repository: string;
+    useCache: boolean;
+    widht: number;
+    height: number;
+}
+export declare function GithubCard(props: Props): JSX.Element;
+export {};

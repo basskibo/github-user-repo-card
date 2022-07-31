@@ -1,6 +1,6 @@
 {
   "name": "github-user-repo-card",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "homepage": "https://github.com/basskibo/github-cards#readme",
   "description": "This module is used for generating github cards for user's profile or repositories ",
   "main": "index.js",
@@ -15,11 +15,15 @@
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^18.0.15",
+    "@types/styled-components": "^5.1.25",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "styled-components": "^5.3.5",
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "react-icons": "^4.4.0",
     "react-scripts": "^5.0.1"
   }
 }
