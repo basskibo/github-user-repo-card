@@ -1,6 +1,6 @@
 {
   "name": "github-user-repo-card",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "homepage": "https://github.com/basskibo/github-cards#readme",
   "description": "This module is used for generating github cards for user's profile or repositories ",
   "main": "./dist/index.js",
