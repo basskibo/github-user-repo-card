@@ -3,16 +3,21 @@
   "version": "0.4.0",
   "homepage": "https://github.com/basskibo/github-cards#readme",
   "description": "This module is used for generating github cards for user's profile or repositories ",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "start": "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc && cp package.json README.md ./dist"
+    "clean:win": "del dist",
+    "build": "npm run clean && tsc && cp package.json README.md ./dist",
+    "win:build": "npm run clean:win && tsc && cp package.json README.md ./dist",
+    "bld": "tsc && cp package.json README.md ./dist",
+    "pack": "npm pack --pack-destination dist"
   },
   "keywords": [],
   "author": "Bojan Jagetic <jagetic.bojan@gmail.com> (http://twitter.com/basskibo1)",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "@types/react": "^18.0.15",
     "@types/styled-components": "^5.1.25",

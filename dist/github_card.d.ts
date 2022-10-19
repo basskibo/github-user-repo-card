@@ -1,12 +1,4 @@
 /// <reference types="react" />
-declare type mode = "user" | "repo";
-interface Props {
-    type: mode;
-    name: string;
-    repository: string;
-    useCache: boolean;
-    widht: number;
-    height: number;
-}
-export declare function GithubCard(props: Props): JSX.Element;
-export {};
+import { IProps } from "./github_card.interface";
+declare const GithubCard: ({ name, repository, type, widht, height }: IProps) => JSX.Element;
+export default GithubCard;

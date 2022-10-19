@@ -1,1 +1,2 @@
-export { GithubCard } from "./github_card";
+import GithubCard from "./github_card.js";
+export { GithubCard };
