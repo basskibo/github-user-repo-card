@@ -7,6 +7,7 @@
 - [About](#about)
 - [How to install](#how-to-install)
 - [Usage](#usage)
+- [Example](#example)
 - [License](#license)
 
 ## About
@@ -35,6 +36,10 @@ In the render method use code
 ```js
 <GithubCard name="basskibo" type="user" repository="blogtech_dev" widht={300} height={400} />
 ```
+
+## Example
+
+You can check [Live Example](https://githubcard-demo.vercel.app/)
 
 ## License
 
