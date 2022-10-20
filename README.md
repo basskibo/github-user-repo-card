@@ -1,6 +1,6 @@
 # Github user repo card
+![Screenshot 2022-10-20 105049](https://user-images.githubusercontent.com/7330740/196929460-fc73acd2-34d6-4df3-82a1-2bfe5e66110d.png)
 
-![Screenshot 2022-10-19 221903](https://user-images.githubusercontent.com/7330740/196796279-7c68f9be-33c5-4093-9171-4345578a43e2.png)
 
 ### Table of content
 
@@ -12,10 +12,7 @@
 
 ## About
 This card is generating react component in order to show Github `user` and `repository` informations. 
-In current version `0.5.2` you are able to set name, width and height of the GitHub card as seen above on the image. 
-
-__Repository card is still not supported__. In the following versions, there will be added repository card support and options that you can see in Features table.
-
+In current version `0.5.5`you are able to set user's name, repository name, type of card width and height of the GitHub card as seen above on the image. 
 
 ## How to install
 
@@ -31,10 +28,16 @@ For now it is only possible to import like module, it will not work with Commonj
 ```js
 import { GithubCard } from "github-user-repo-card";
 ```
-In the render method use code 
+In the render method use `<GithubCard>` and defined by type you will generate for user or repository.
+Code example for user profile card: 
 
 ```js
 <GithubCard name="basskibo" type="user" repository="blogtech_dev" widht={300} height={400} />
+```
+
+Code example for repository card:
+```js
+ <GithubCard name="basskibo" type="repo" repository="github-user-repo-card" widht={500} height={150} />
 ```
 
 ## Example
@@ -47,10 +50,11 @@ You can check [Live Example](https://githubcard-demo.vercel.app/)
 | `type` | Type can be `user`/`profile` or `repository`| ✅ |
 | `name` | Account name of `user`/`profile` on the GitHub | ✅ | 
 | `repository` | Name of the repository on the GitHub | ✅ | 
-| `useCache` | Flag `boolean` wheather to used cache data | ❌ |
+| `useCache` | Flag `boolean` wheather to used cache data. Default `false` | ❌ |
 | `widht` | Set desired width of the GitHubCard | ✅ |
 | `height` | Set desired height of the GitHubCard | ✅ |
-| `showProperties` | Set desired property which you want to show | ❌ |
+| `showProperties` | Set desired array of properties which you want to show | ❌ |
+| `clickable` | `boolean` flag wheather card will be link or static. Default `true`| ❌ |
 
 ## License
 
