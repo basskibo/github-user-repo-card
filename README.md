@@ -41,6 +41,17 @@ In the render method use code
 
 You can check [Live Example](https://githubcard-demo.vercel.app/)
 
+## Available properties
+| Name | Description | Implemented |
+| :---: | :--- | :---: |
+| `type` | Type can be `user`/`profile` or `repository`| ✅ |
+| `name` | Account name of `user`/`profile` on the GitHub | ✅ | 
+| `repository` | Name of the repository on the GitHub | ✅ | 
+| `useCache` | Flag `boolean` wheather to used cache data | ❌ |
+| `widht` | Set desired width of the GitHubCard | ✅ |
+| `height` | Set desired height of the GitHubCard | ✅ |
+| `showProperties` | Set desired property which you want to show | ❌ |
+
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
