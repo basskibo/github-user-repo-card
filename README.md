@@ -1,5 +1,5 @@
 # Github user repo card
-![Screenshot 2022-10-20 105049](https://user-images.githubusercontent.com/7330740/196929460-fc73acd2-34d6-4df3-82a1-2bfe5e66110d.png)
+![Screenshot 2022-10-20 1115492](https://user-images.githubusercontent.com/7330740/196935100-c19dfe4f-9ff8-4b84-b411-8c8453a08f1f.png)
 
 
 ### Table of content
