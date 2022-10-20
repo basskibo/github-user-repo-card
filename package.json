@@ -6,29 +6,35 @@
   "main": "./dist/index.js",
   "scripts": {
     "start": "react-scripts start",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
-    "clean:win": "del dist",
-    "build": "npm run clean && tsc && cp package.json README.md ./dist",
-    "win:build": "npm run clean:win && tsc && cp package.json README.md ./dist",
-    "bld": "tsc && cp package.json README.md ./dist",
-    "pack": "npm pack --pack-destination dist"
+    "clean:win": "del /f dist",
+    "build": "tsc && cp package.json README.md ./dist",
+    "build:win": "tsc && npm run cp:win",
+    "cp:win": "COPY package.json && COPY README.md ./dist && COPY",
+    "pack": "npm pack --pack-destination dist",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Bojan Jagetic <jagetic.bojan@gmail.com> (http://twitter.com/basskibo1)",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.15",
     "@types/styled-components": "^5.1.25",
+    "babel-jest": "^29.2.1",
+    "jest": "^27.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.5",
+    "ts-node": "^10.9.1",
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "react-icons": "^4.4.0",
-    "react-scripts": "^5.0.1"
+    "axios": "^0.27.2"
   }
 }
