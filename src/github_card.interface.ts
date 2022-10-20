@@ -1,4 +1,4 @@
-type Mode = "user" | "repo";
+type Mode = "user" | "profile" | "repo";
 
 
 export interface IProfile {
@@ -7,11 +7,24 @@ export interface IProfile {
     avatar_url: string;
     following: string;
     followers: string;
-    location: string;
+    location?: string;
     public_repos: number;
     total_private_repos: number;
-    bio: string;
+    bio?: string;
 }
+
+
+
+export interface IRepository {
+    html_url: string;
+    name: string;
+    description: string;
+    language: string;
+    stargazers_count: number;
+
+}
+
+
 
 export interface IProps {
     type: Mode;
@@ -21,3 +34,13 @@ export interface IProps {
     widht?: number;
     height?: number;
 }
+
+
+export interface ILanguage {
+    backgroundColor: string;
+    height: number;
+    width: number;
+    borderRadius: string;
+    display: string;
+}
+
