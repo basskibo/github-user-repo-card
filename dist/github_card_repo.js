@@ -36,7 +36,12 @@ const GithubRepoCard = (repository) => {
             React.createElement("div", { style: { display: "flex", justifyContent: "left", flexWrap: "wrap", gap: 10, marginTop: 15, color: "#768390", fontSize: 17 } },
                 React.createElement("div", { style: setLanguageColor(repository.language) }),
                 React.createElement("div", { className: 'ml-0 mr-3', style: { marginRight: 3, marginLeft: 0 } }, repository.language),
-                repository.stargazers_count > 0 ? (React.createElement("div", { className: '' },
-                    React.createElement("b", null, repository.stargazers_count))) : (React.createElement(React.Fragment, null)))))) : (React.createElement(React.Fragment, null))));
+                repository.stargazers_count > 0 ? (React.createElement("div", null,
+                    React.createElement("span", { style: { paddingTop: 5, paddingRight: 1 } },
+                        React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "16", height: "16" },
+                            React.createElement("path", { fill: "none", d: "M0 0h24v24H0z" }),
+                            React.createElement("path", { d: "M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z", fill: "rgba(118,131,144,1)" })),
+                        "                                "),
+                    React.createElement("span", { style: { fontSize: 18, fontWeight: "bold" } }, repository.stargazers_count))) : (React.createElement(React.Fragment, null)))))) : (React.createElement(React.Fragment, null))));
 };
 export default GithubRepoCard;
