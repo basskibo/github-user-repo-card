@@ -56,10 +56,12 @@ const GithubRepoCard = (repository: IRepository) => {
                         <div style={{ display: "flex", justifyContent: "left", flexWrap: "wrap", gap: 10, marginTop: 15, color: "#768390", fontSize: 17 }}>
                             <div style={setLanguageColor(repository.language)}></div>
                             <div className='ml-0 mr-3' style={{ marginRight: 3, marginLeft: 0 }}>{repository.language}</div>
+
                             {repository.stargazers_count > 0 ? (
-                                <div className=''>
-                                    {/* <AiOutlineStar className='h-4 mt-0.1 inline-flex' /> */}
-                                    <b>{repository.stargazers_count}</b>
+                                <div>
+                                    <span style={{ paddingTop: 5, paddingRight: 1 }}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z" /><path d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z" fill="rgba(118,131,144,1)" /></svg>                                </span>
+                                    <span style={{ fontSize: 18, fontWeight: "bold" }}>{repository.stargazers_count}</span>
                                 </div>
                             ) : (
                                 <></>
