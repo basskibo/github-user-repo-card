@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import { IProfile, IRepository, IProps } from "./github_card.interface";
-import GithubProfileCard from "./github_card_profile";
-import GithubRepoCard from "./github_card_repo";
+import GithubProfileCard from "./github_card_profile.js";
+import GithubRepoCard from "./github_card_repo.js";
 
 const GithubCard = ({ name, repository, type, widht, height }: IProps) => {
     const [profile, setProfile] = useState<IProfile | null>(null);

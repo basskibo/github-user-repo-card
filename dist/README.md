@@ -12,7 +12,7 @@
 
 ## About
 This card is generating react component in order to show Github `user` and `repository` informations. 
-In current version `0.5.5`you are able to set user's name, repository name, type of card width and height of the GitHub card as seen above on the image. 
+In current version `0.x`you are able to set user's name, repository name, type of card width and height of the GitHub card as seen above on the image. 
 
 ## How to install
 

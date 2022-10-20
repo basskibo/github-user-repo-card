@@ -9,8 +9,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import GithubProfileCard from "./github_card_profile";
-import GithubRepoCard from "./github_card_repo";
+import GithubProfileCard from "./github_card_profile.js";
+import GithubRepoCard from "./github_card_repo.js";
 const GithubCard = ({ name, repository, type, widht, height }) => {
     const [profile, setProfile] = useState(null);
     const [repo, setRepository] = useState(null);
