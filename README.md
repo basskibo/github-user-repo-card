@@ -42,7 +42,7 @@ Code example for repository card:
 
 ## Example
 
-You can check [Live Example](https://githubcard-demo.vercel.app/)
+You can check [Live Example](https://githubcard.bojanjagetic.com/)
 
 ## Available properties
 | Name | Description | Implemented |

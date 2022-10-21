@@ -8,3 +8,16 @@
 .flex-gap>div {
   margin: 26px;
 }
+
+
+.icon,
+.text {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+.text {
+  padding-bottom: 2px;
+}

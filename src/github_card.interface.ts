@@ -1,15 +1,20 @@
 type Mode = "user" | "profile" | "repo";
 
+type Licence = {
+    name: string;
+    key: string;
+}
 
 export interface IProfile {
     html_url: string;
     login: string;
+    name?: string;
     avatar_url: string;
     following: string;
     followers: string;
     location?: string;
     public_repos: number;
-    total_private_repos: number;
+    public_gists: number;
     bio?: string;
 }
 
@@ -21,6 +26,10 @@ export interface IRepository {
     description: string;
     language: string;
     stargazers_count: number;
+    watchers?: number;
+    forks_count?: number;
+    default_branch?: string;
+    license?: Licence
 
 }
 
