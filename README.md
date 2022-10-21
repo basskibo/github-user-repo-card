@@ -1,6 +1,6 @@
 # Github user repo card
-![Screenshot 2022-10-20 1115492](https://user-images.githubusercontent.com/7330740/196935100-c19dfe4f-9ff8-4b84-b411-8c8453a08f1f.png)
 
+![Screenshot 2022-10-21 134806](https://user-images.githubusercontent.com/7330740/197189048-6846ff5a-4f25-4b44-a2b1-14098da8217b.png)
 
 ### Table of content
 
@@ -12,7 +12,7 @@
 
 ## About
 This card is generating react component in order to show Github `user` and `repository` informations. 
-In current version `0.5.5`you are able to set user's name, repository name, type of card width and height of the GitHub card as seen above on the image. 
+In current version `0.6.x`you are able to set user's name, repository name, type of card width and height of the GitHub card as seen above on the image. 
 
 ## How to install
 
